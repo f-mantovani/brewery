@@ -1,0 +1,8 @@
+:root {
+  --bg-clr: rgb(231, 226, 226);
+  --font-clr: #322121;
+}
+
+img {
+  max-width: 100%;
+}

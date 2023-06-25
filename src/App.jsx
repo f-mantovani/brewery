@@ -3,7 +3,7 @@ import { Center, MantineProvider, Stack } from '@mantine/core'
 import { Header } from './components/Header.jsx'
 import { Routes, Route } from 'react-router-dom'
 import { HomePage } from './pages/HomePage.jsx'
-import { BeersList } from './components/BeersList/BeersList.jsx'
+import { BeersList } from './pages/BeersList/BeersList.jsx'
 
 function App() {
 	return (

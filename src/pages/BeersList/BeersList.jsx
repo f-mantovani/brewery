@@ -1,13 +1,17 @@
-import { List } from '@mantine/core'
+import { Center } from '@mantine/core'
 import { useState, useEffect } from 'react'
+
+import { BeerCard } from '../../components/BeerCard/BeerCard.jsx'
 import beerConnect from '../../utils/beersConnection.js'
+
+import './BeerList.css'
 
 export const BeersList = () => {
 	const [beersList, setBeersList] = useState(undefined)
 
 	useEffect(() => {
 		const controller = new AbortController()
-    
+
 		beerConnect
 			.getBeers({ signal: controller.signal })
 			.then(result => {
@@ -18,18 +22,17 @@ export const BeersList = () => {
 		return () => {
 			controller.abort()
 		}
-
 	}, [])
 
-	console.log(beersList && beersList[0])
-
 	return (
-		<List>
-			{beersList ? (
-				beersList.map(beer => <p key={beer._id}>{beer.name}</p>)
-			) : (
-				<p> nothing at the moment</p>
-			)}
-		</List>
+		<Center>
+			<ul className='beer-list'>
+				{beersList ? (
+					beersList.map(beer => <BeerCard key={beer._id} {...beer} />)
+				) : (
+					<p> Nothing at the moment!</p>
+				)}
+			</ul>
+		</Center>
 	)
 }

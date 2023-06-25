@@ -3,7 +3,7 @@
 }
 
 .home-card > * {
-	background-color: rgb(231, 226, 226);
+	background-color: var(--bg-clr);
 }
 
 .home-card h6,
@@ -12,5 +12,5 @@
 }
 
 .home-card h6 {
-	color: #322121;
+	color: var(--font-clr);
 }

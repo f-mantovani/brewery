@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
 	return (
-		<Center style={{ backgroundColor: 'rgb(231, 226, 226)', width: '100%' }}>
+		<Center style={{ backgroundColor: 'var(--bg-clr)', width: '100%' }}>
 			<NavLink to='/' >
-				<IconHome size='5rem' stroke={1} style={{color: '#322121'}} />
+				<IconHome size='5rem' stroke={1} style={{color: 'var(--font-clr)'}} />
 			</NavLink>
 		</Center>
 	)
