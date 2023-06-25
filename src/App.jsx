@@ -9,17 +9,17 @@ function App() {
 		<>
 			<MantineProvider withGlobalStyles withNormalizeCSS theme={{ colorScheme: 'dark' }}>
 				<Container style={{ margin: '2rem auto' }}>
-					<Center>
-						<Stack>
+					<Stack>
+						<Center>
 							<Header />
-							<Routes>
-								<Route path='/' element={<HomePage />} />
-								<Route path='/new-beer' element />
-								<Route path='/random-beer' element />
-								<Route path='/beers' element />
-							</Routes>
-						</Stack>
-					</Center>
+						</Center>
+						<Routes>
+							<Route path='/' element={<HomePage />} />
+							<Route path='/new-beer' element />
+							<Route path='/random-beer' element />
+							<Route path='/beers' element />
+						</Routes>
+					</Stack>
 				</Container>
 			</MantineProvider>
 		</>
