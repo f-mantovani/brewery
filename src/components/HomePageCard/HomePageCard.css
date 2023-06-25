@@ -1,0 +1,16 @@
+.home-card {
+	text-decoration: none;
+}
+
+.home-card > * {
+	background-color: rgb(231, 226, 226);
+}
+
+.home-card h6,
+.home-card p {
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.home-card h6 {
+	color: #322121;
+}

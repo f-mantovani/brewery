@@ -2,7 +2,7 @@ import newBeer from '../assets/new-beer.png'
 import randomBeer from '../assets/random-beer.png'
 import beersList from '../assets/beers.png'
 import { Center, Stack } from '@mantine/core'
-import { HomePageCard } from '../components/HomePageCard.jsx'
+import { HomePageCard } from '../components/HomePageCard/HomePageCard.jsx'
 
 export const HomePage = () => {
 	return (
