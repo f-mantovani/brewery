@@ -27,6 +27,14 @@ class beerConnect {
 	getBeers(signal) {
 		return this.api.get('/', signal)
 	}
+
+	getOneBeer(id, signal) {
+		return this.api.get(`/${id}`, signal)
+	}
+	
+	getRandomBeer(signal){
+		return this.api.get('/random', signal)
+	}
 }
 
 export default new beerConnect()

@@ -1,0 +1,24 @@
+
+.single-beer {
+	background-color: var(--bg-clr);
+	color: var(--font-clr);
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-items: center;
+  justify-items: center;
+  padding: 1em 3em;
+}
+
+.single-beer p {
+	max-width: 400px;
+  margin: 0;
+}
+.single-beer h6 {
+	margin: 0;
+}
+
+.row {
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

@@ -4,6 +4,8 @@ import { Header } from './components/Header.jsx'
 import { Routes, Route } from 'react-router-dom'
 import { HomePage } from './pages/HomePage.jsx'
 import { BeersList } from './pages/BeersList/BeersList.jsx'
+import { RandomBeer } from './pages/RandomBeer/RandomBeer.jsx'
+import { OneBeer } from './pages/OneBeer/OneBeer.jsx'
 
 function App() {
 	return (
@@ -16,7 +18,8 @@ function App() {
 						<Routes>
 							<Route path='/' element={<HomePage />} />
 							<Route path='/beers' element={<BeersList />} />
-							<Route path='/random-beer' element />
+							<Route path='/random-beer' element={<RandomBeer /> } />
+							<Route path='/beers/:id' element={<OneBeer /> } />
 							<Route path='/new-beer' element />
 						</Routes>
 					</Stack>

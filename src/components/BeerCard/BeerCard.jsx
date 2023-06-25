@@ -14,7 +14,7 @@ export const BeerCard = ({ _id, name, tagline, contributed_by, image_url }) => {
 					{tagline}
 				</Text>
 				<Text>{contributed_by.split('<')[0]}</Text>
-				<NavLink to={`/beer/${_id}`}> More details </NavLink>
+				<NavLink to={`/beers/${_id}`}> More details </NavLink>
 			</div>
 		</li>
 	)

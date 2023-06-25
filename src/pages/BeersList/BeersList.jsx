@@ -7,7 +7,7 @@ import beerConnect from '../../utils/beersConnection.js'
 import './BeerList.css'
 
 export const BeersList = () => {
-	const [beersList, setBeersList] = useState(undefined)
+	const [beersList, setBeersList] = useState(null)
 
 	useEffect(() => {
 		const controller = new AbortController()
