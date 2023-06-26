@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage.jsx'
 import { BeersList } from './pages/BeersList/BeersList.jsx'
 import { RandomBeer } from './pages/RandomBeer/RandomBeer.jsx'
 import { OneBeer } from './pages/OneBeer/OneBeer.jsx'
+import { NewBeer } from './pages/NewBeer.jsx'
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 							<Route path='/beers' element={<BeersList />} />
 							<Route path='/random-beer' element={<RandomBeer /> } />
 							<Route path='/beers/:id' element={<OneBeer /> } />
-							<Route path='/new-beer' element />
+							<Route path='/new-beer' element={<NewBeer />} />
 						</Routes>
 					</Stack>
 			</MantineProvider>

@@ -26,7 +26,7 @@ export const BeersList = () => {
 
 	return (
 		<Center>
-			<ul className='beer-list'>
+			<ul>
 				{beersList ? (
 					beersList.map(beer => <BeerCard key={beer._id} {...beer} />)
 				) : (
