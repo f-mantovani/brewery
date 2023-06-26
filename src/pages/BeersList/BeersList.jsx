@@ -24,6 +24,8 @@ export const BeersList = () => {
 		}
 	}, [])
 
+	console.log(beersList)
+
 	return (
 		<Center>
 			<ul>
