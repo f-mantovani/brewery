@@ -22,7 +22,7 @@ export const Beer = ({
 					<div className='row'>
 						<Stack>
 							<Text component='h6'>{name} </Text>
-							<Text component='p' color='dimmed'>
+							<Text component='span' color='dimmed'>
 								<Text component='p'> Tagline: </Text>
 								{tagline}
 							</Text>
@@ -57,6 +57,6 @@ Beer.propTypes = {
 	image_url: PropTypes.string,
 	description: PropTypes.string,
 	first_brewed: PropTypes.string,
-	attenuation_level: PropTypes.string,
+	attenuation_level: PropTypes.number,
 	brewers_tips: PropTypes.string,
 }
