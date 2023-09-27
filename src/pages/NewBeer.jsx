@@ -19,13 +19,13 @@ export const NewBeer = () => {
 			tagline: '',
 			description: '',
 			first_brewed: '',
-			brewers_tips: '',
+			brewers_tips: [],
 			attenuation_level: '',
 			contributed_by: '',
 		},
 	})
 
-  const navigate = useNavigate()
+	const navigate = useNavigate()
 
 	const handleSubmit = values => {
 		const controller = new AbortController()
@@ -63,7 +63,7 @@ export const NewBeer = () => {
 							{...form.getInputProps('first_brewed')}
 						/>
 						<TextInput
-							label='Brewers Tips'
+							label={`Brewer's Tips`}
 							placeholder='Tips for success'
 							{...form.getInputProps('brewers_tips')}
 						/>
